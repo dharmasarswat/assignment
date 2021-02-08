@@ -11,6 +11,7 @@ function App() {
 		<Router>
 			<Switch>
 				<Route exact path="/" component={Home} />
+				<Route exact path="/assignment" component={Home} />
 				<AntiProtectedRoutes exact path="/login" component={Login} />
 				<ProtectedRoutes exact path="/blogs/:id" component={Comments} />
 				<ProtectedRoutes exact path="/blog" component={Blogs} />
